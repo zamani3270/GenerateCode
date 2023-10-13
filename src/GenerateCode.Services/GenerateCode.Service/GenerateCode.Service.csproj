@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\GenerateCode.Repository\GenerateCode.Repository\GenerateCode.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

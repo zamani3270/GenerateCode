@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.Data", "Genera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.Data", "GenerateCode.Data\GenerateCode.Data\GenerateCode.Data.csproj", "{D86CFB84-5D0A-48D0-B863-41C1BD2FE417}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.IocConfig", "GenerateCode.IocConfig", "{32CB8439-0044-4F84-9F38-BAEC57D43976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.IocConfig", "GenerateCode.IocConfig\GenerateCode.IocConfig\GenerateCode.IocConfig.csproj", "{95C92A52-F200-4E90-81EB-20D8039E82AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{D86CFB84-5D0A-48D0-B863-41C1BD2FE417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D86CFB84-5D0A-48D0-B863-41C1BD2FE417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D86CFB84-5D0A-48D0-B863-41C1BD2FE417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{F5DC039C-3B7A-4A99-8105-F97626050406} = {086A5E5C-714E-455E-88A6-E817F52EADBB}
 		{2330E0BE-5E87-401B-B74E-A83B9935B209} = {96B927B0-C136-4C06-847A-4D9DD5DA6805}
 		{D86CFB84-5D0A-48D0-B863-41C1BD2FE417} = {7B236F06-7DC8-47B7-9E5F-BA8467D3F3D1}
+		{95C92A52-F200-4E90-81EB-20D8039E82AD} = {32CB8439-0044-4F84-9F38-BAEC57D43976}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F9D91FB-8C78-41D1-A4B9-EBC06CAF2759}
