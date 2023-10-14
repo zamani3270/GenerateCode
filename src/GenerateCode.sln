@@ -5,23 +5,27 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.Api", "GenerateCode.Api", "{92654F3D-9380-44C7-B603-BE5F52BF59FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.API", "GenerateCode.API\GenerateCode.API\GenerateCode.API.csproj", "{318889AB-A043-4DDF-A18E-A0E5AD1BBB8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateCode.API", "GenerateCode.API\GenerateCode.API\GenerateCode.API.csproj", "{318889AB-A043-4DDF-A18E-A0E5AD1BBB8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.Services", "GenerateCode.Services", "{086A5E5C-714E-455E-88A6-E817F52EADBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.Repository", "GenerateCode.Repository", "{96B927B0-C136-4C06-847A-4D9DD5DA6805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.Service", "GenerateCode.Services\GenerateCode.Service\GenerateCode.Service.csproj", "{F5DC039C-3B7A-4A99-8105-F97626050406}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateCode.Service", "GenerateCode.Services\GenerateCode.Service\GenerateCode.Service.csproj", "{F5DC039C-3B7A-4A99-8105-F97626050406}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.Repository", "GenerateCode.Repository\GenerateCode.Repository\GenerateCode.Repository.csproj", "{2330E0BE-5E87-401B-B74E-A83B9935B209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateCode.Repository", "GenerateCode.Repository\GenerateCode.Repository\GenerateCode.Repository.csproj", "{2330E0BE-5E87-401B-B74E-A83B9935B209}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.Data", "GenerateCode.Data", "{7B236F06-7DC8-47B7-9E5F-BA8467D3F3D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.Data", "GenerateCode.Data\GenerateCode.Data\GenerateCode.Data.csproj", "{D86CFB84-5D0A-48D0-B863-41C1BD2FE417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateCode.Data", "GenerateCode.Data\GenerateCode.Data\GenerateCode.Data.csproj", "{D86CFB84-5D0A-48D0-B863-41C1BD2FE417}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.IocConfig", "GenerateCode.IocConfig", "{32CB8439-0044-4F84-9F38-BAEC57D43976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.IocConfig", "GenerateCode.IocConfig\GenerateCode.IocConfig\GenerateCode.IocConfig.csproj", "{95C92A52-F200-4E90-81EB-20D8039E82AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenerateCode.IocConfig", "GenerateCode.IocConfig\GenerateCode.IocConfig\GenerateCode.IocConfig.csproj", "{95C92A52-F200-4E90-81EB-20D8039E82AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenerateCode.Infrastructure", "GenerateCode.Infrastructure", "{92CC8981-2A96-4EED-8718-BD507C4479B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateCode.Infrastucture", "GenerateCode.Infrastucture\GenerateCode.Infrastucture\GenerateCode.Infrastucture.csproj", "{CD8CD481-6AA8-4FCE-985C-E27BED623AAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C92A52-F200-4E90-81EB-20D8039E82AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8CD481-6AA8-4FCE-985C-E27BED623AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8CD481-6AA8-4FCE-985C-E27BED623AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8CD481-6AA8-4FCE-985C-E27BED623AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8CD481-6AA8-4FCE-985C-E27BED623AAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{2330E0BE-5E87-401B-B74E-A83B9935B209} = {96B927B0-C136-4C06-847A-4D9DD5DA6805}
 		{D86CFB84-5D0A-48D0-B863-41C1BD2FE417} = {7B236F06-7DC8-47B7-9E5F-BA8467D3F3D1}
 		{95C92A52-F200-4E90-81EB-20D8039E82AD} = {32CB8439-0044-4F84-9F38-BAEC57D43976}
+		{CD8CD481-6AA8-4FCE-985C-E27BED623AAE} = {92CC8981-2A96-4EED-8718-BD507C4479B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F9D91FB-8C78-41D1-A4B9-EBC06CAF2759}
