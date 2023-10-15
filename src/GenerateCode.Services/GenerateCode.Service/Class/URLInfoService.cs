@@ -15,11 +15,13 @@ namespace GenerateCode.Service
     {
         #region CTOR
         private readonly IURLInfoRepository _urlInfoRepository;
+        private readonly ILogService _logService;
         private readonly IMapper _mapper;
-        public URLInfoService(IURLInfoRepository urlInfoRepository, IMapper mapper)
+        public URLInfoService(IURLInfoRepository urlInfoRepository, IMapper mapper, ILogService logService)
         {
             _urlInfoRepository = urlInfoRepository;
             _mapper = mapper;
+            _logService = logService;
         }
 
         #endregion CTOR
@@ -52,7 +54,8 @@ namespace GenerateCode.Service
 
         private URLInfoDTO? GetInfoByCode(Guid code)
         {
-            throw new NotImplementedException();
+            _logService.InsertUrlRequestedCount(code.ToString(), false);
+            return _mapper.Map<URLInfoDTO>(_urlInfoRepository.GetInfoByCode(code));
         }
 
         private URLInfoDTO? GetInfoByURL(string url)
@@ -60,6 +63,7 @@ namespace GenerateCode.Service
             var recordExist = _urlInfoRepository.GetInfoByURL(url);
             if (recordExist != null)
             {
+                _logService.InsertUrlRequestedCount(url, true);
                 return _mapper.Map<URLInfoDTO>(recordExist);
             }
             return null;
@@ -74,6 +78,7 @@ namespace GenerateCode.Service
             var insertResult = _urlInfoRepository.SaveObject(modelToInsert);
             if (insertResult)
             {
+                _logService.InsertUrlRequestedCount(url, true);
                 return _mapper.Map<URLInfoDTO>(modelToInsert);
             }
             return null;

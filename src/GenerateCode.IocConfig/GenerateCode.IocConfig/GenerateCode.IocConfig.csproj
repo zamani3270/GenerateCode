@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\GenerateCode.Repository\GenerateCode.Repository\GenerateCode.Repository.csproj" />
+    <ProjectReference Include="..\..\GenerateCode.Services\GenerateCode.Service\GenerateCode.Service.csproj" />
   </ItemGroup>
 
 </Project>
